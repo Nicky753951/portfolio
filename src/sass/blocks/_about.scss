@@ -51,17 +51,21 @@
 
 	&__subtitle{
 		position: relative;
-        @include before_circle2; 
+        @include before_circle; 
         padding-left: 13px;
         z-index: 2;
 	}
 
 	&__circle{
 		position: relative;
-        @include before_circle2;
+        @include before_circle;
         padding-top: 5px;
         padding-left: 20px;
         z-index: 2;
+	}
+
+	.divider{
+		margin: 0;
 	}
 
 }
