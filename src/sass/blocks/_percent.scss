@@ -1,0 +1,68 @@
+.percent{
+	padding-top: 128px;
+
+	&__content{
+		width: 350px;
+	}
+
+	&__gradation{
+		margin-top: 27px;
+		background-color:#E8E4DE;
+		height: 14px;
+		width: 100%;
+		border-radius: 4px;	
+		&-plus{
+			height: 100%;
+			width: 100%;
+			background-color: $main-color;
+			border-radius:4px;
+				&_90{	
+				width: 90%;
+				}
+				&_100{	
+				width: 100%;
+				}
+				&_75{	
+				width: 75%;
+				}
+				&_85{	
+				width: 85%;
+				}
+				&_95{	
+				width: 95%;
+				}
+		}
+
+	}
+
+	&__wrapper{
+		display: grid;
+		grid-template-columns:repeat(3,1fr);
+		grid-template-rows:repeat(2,1fr);
+		column-gap:45px;
+		row-gap:30px;
+	}
+		&__name{
+		display: grid;
+		grid-template-columns:repeat(2,1fr);
+			&-pe{
+				text-align: right;
+				font-size: 14px;
+				line-height: 21px;
+			}
+			&-sk{
+				font-weight: bold;
+				font-size: 14px;
+				line-height: 21px;
+			}
+		}
+	&__title{
+		padding-left: 13px;
+		position: relative;
+		@include before_circle;
+		&:before{
+			top:-8px;
+		}
+	}
+
+}
