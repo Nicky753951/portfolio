@@ -16,21 +16,6 @@
 			width: 100%;
 			background-color: $main-color;
 			border-radius:4px;
-				&_90{	
-				width: 90%;
-				}
-				&_100{	
-				width: 100%;
-				}
-				&_75{	
-				width: 75%;
-				}
-				&_85{	
-				width: 85%;
-				}
-				&_95{	
-				width: 95%;
-				}
 		}
 
 	}
@@ -44,9 +29,9 @@
 	}
 		&__name{
 		display: grid;
-		grid-template-columns:repeat(2,1fr);
+		grid-template-columns: 1fr minmax(28px,34px);
+		justify-items:space-between;
 			&-pe{
-				text-align: right;
 				font-size: 14px;
 				line-height: 21px;
 			}
