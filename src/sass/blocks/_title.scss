@@ -23,4 +23,18 @@
         font-size: 20px;
         line-height:30px;
     }
+
+    &__section-title{
+        text-align: center;
+        position: relative;
+        @include before_circle;
+        &:before{
+            top: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__section-subtitle{
+        text-align: center;
+    }
 }
